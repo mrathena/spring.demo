@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.mrathena</groupId>
+	<artifactId>spring.demo</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>spring.demo.core</module>
+		<module>spring.demo.dao</module>
+		<module>spring.demo.manage</module>
+		<module>spring.demo.integration</module>
+		<module>spring.demo.api</module>
+		<module>spring.demo.business</module>
+		<module>spring.demo.service</module>
+		<module>spring.demo.web</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<!--module-->
+			<dependency>
+				<groupId>com.mrathena</groupId>
+				<artifactId>spring.demo.web</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mrathena</groupId>
+				<artifactId>spring.demo.service</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mrathena</groupId>
+				<artifactId>spring.demo.business</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mrathena</groupId>
+				<artifactId>spring.demo.api</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mrathena</groupId>
+				<artifactId>spring.demo.integration</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mrathena</groupId>
+				<artifactId>spring.demo.manage</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mrathena</groupId>
+				<artifactId>spring.demo.dao</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.mrathena</groupId>
+				<artifactId>spring.demo.core</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<!--spring-->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+				<version>4.3.23.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jdbc</artifactId>
+				<version>4.3.23.RELEASE</version>
+			</dependency>
+			<!--tool-->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.18.6</version>
+				<scope>provided</scope>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+
+		</pluginManagement>
+		<plugins>
+
+		</plugins>
+	</build>
+
+</project>
