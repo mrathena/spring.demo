@@ -15,7 +15,7 @@
 		<!--module-->
 		<dependency>
 			<groupId>com.mrathena</groupId>
-			<artifactId>spring.demo.core</artifactId>
+			<artifactId>spring.demo.common</artifactId>
 		</dependency>
 		<!--other-->
 		<dependency>

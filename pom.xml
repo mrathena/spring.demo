@@ -11,7 +11,7 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>spring.demo.core</module>
+		<module>spring.demo.common</module>
 		<module>spring.demo.dao</module>
 		<module>spring.demo.manage</module>
 		<module>spring.demo.integration</module>
@@ -61,7 +61,7 @@
 			</dependency>
 			<dependency>
 				<groupId>com.mrathena</groupId>
-				<artifactId>spring.demo.core</artifactId>
+				<artifactId>spring.demo.common</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<!--spring-->
