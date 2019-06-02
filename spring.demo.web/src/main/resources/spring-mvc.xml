@@ -11,6 +11,6 @@
 		http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 	<mvc:annotation-driven/>
-	<context:component-scan base-package="com.mrathena.spring.demo.web.controller"/>
+	<context:component-scan base-package="com.mrathena.controller"/>
 
 </beans>
